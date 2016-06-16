@@ -22,6 +22,9 @@
 /// 获取图片，根据图片名称
 #define kImageWithName(text) [UIImage imageNamed:text]
 
+/// 获取图片，根据图片url
+#define kImageWithURL(text) [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:URLWithString(imageUrl)]]
+
 /// 拉伸图片边框处理
 #define kImageUIEdgeWithName(text) [[UIImage imageNamed:text] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]
 
