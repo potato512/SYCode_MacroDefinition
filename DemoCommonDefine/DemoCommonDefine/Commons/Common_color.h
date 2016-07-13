@@ -13,6 +13,9 @@
 
 #pragma mark - 颜色设置方法
 
+/// 设置随机颜色
+#define UIColorRandom [UIColor colorWithRed:(arc4random_uniform(256) / 255.0) green:(arc4random_uniform(256) / 255.0) blue:(arc4random_uniform(256) / 255.0) alpha:1.0]
+
 /// 设置颜色（RGB：0.0~255.0） 示例：UIColorRGB(100, 100, 100)
 #define UIColorRGB(R,G,B) [UIColor colorWithRed:(R / 255.0) green:(G / 255.0) blue:(B / 255.0) alpha:1.0]
 
