@@ -127,6 +127,12 @@
 /// IOS9及以上的系统
 #define isIOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
 
+/// 设备类型-模拟器（模拟器，或真机）
+#define isSimulatorDevice ([[[[NSBundle mainBundle] infoDictionary] objectForKey:@"DTPlatformName"] isEqualToString:@"iphonesimulator"])
+
+/// 设备类型-真机（模拟器，或真机）
+#define isIphoneosDevice ([[[[NSBundle mainBundle] infoDictionary] objectForKey:@"DTPlatformName"] isEqualToString:@"iphoneos"])
+
 /// 设备序列号
 #define GetDeviceIdentifier [[UIDevice currentDevice] identifierForVendor].UUIDString
 

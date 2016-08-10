@@ -72,6 +72,14 @@
     NSLog(@"国际化区域名称: %@", GetDeviceLocalModel);
     NSLog(@"电池电量: %@", @(GetDeviceBatteryLevel));
     NSLog(@"电池状态: %@", @(GetDeviceBatteryState));
+    
+    NSDictionary *dict = [[NSBundle mainBundle] infoDictionary];
+    NSLog(@"dict = %@", dict);
+    NSString *platformName = [dict objectForKey:@"DTPlatformName"];
+    NSLog(@"platformName = %@", platformName);
+    NSString *platformVersion = [dict objectForKey:@"DTPlatformVersion"];
+    NSLog(@"platformVersion = %@", platformVersion);
+    
 }
 
 - (void)didReceiveMemoryWarning {
