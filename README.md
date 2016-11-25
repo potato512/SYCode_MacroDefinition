@@ -1,4 +1,4 @@
-# CodeOfCommonDefinition
+# SYCode_MacroDefinition
 常用宏定义
 
 * 汇总类 Common_define.h
