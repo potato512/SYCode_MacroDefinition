@@ -20,16 +20,16 @@
 #define kImageFromBundleName(name) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:nil]])
 
 /// 获取图片，根据图片名称
-#define kImageWithName(text) [UIImage imageNamed:text]
+#define kImageWithName(name) [UIImage imageNamed:name]
 
 /// 获取图片，根据图片url
-#define kImageWithURL(text) [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:URLWithString(imageUrl)]]
+#define kImageWithURL(name) [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:URLWithString(name)]]
 
 /// 拉伸图片边框处理
-#define kImageUIEdgeWithName(text) [[UIImage imageNamed:text] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]
+#define kImageUIEdgeWithName(name) [[UIImage imageNamed:name] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]
 
 /// 拉伸图片边框处理
-#define kImageWithUIEdge(text, UIEdgeInsets) [[UIImage imageNamed:text] resizableImageWithCapInsets:UIEdgeInsets resizingMode:UIImageResizingModeStretch]
+#define kImageWithUIEdge(name, UIEdgeInsets) [[UIImage imageNamed:name] resizableImageWithCapInsets:UIEdgeInsets resizingMode:UIImageResizingModeStretch]
 
 /// 获取图片，根据颜色设置
 //#define kImageWithColor(color) [UIImage imageWithColor:color size:CGSizeMake(1.0, 1.0)]
@@ -44,9 +44,6 @@
 
 /// 默认图标-头像
 #define kImageHeaderDefault     kImageWithName(@"headerDefaultIcon")
-
-/// 默认图标-会员，或分销商等级
-#define kImageLevelDefault      kImageWithName(@"levelDefaultIcon")
 
 /// 默认图标-商品图片
 #define kImageProductDefault    kImageWithName(@"goodsImage_default")

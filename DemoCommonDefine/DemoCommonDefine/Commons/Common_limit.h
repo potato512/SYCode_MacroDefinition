@@ -14,95 +14,92 @@
 #pragma mark - 时间限制
 
 /// 提示符时间长度
-#define kHUDTime 2.5
+static NSTimeInterval const kHUDTime = 2.5;
 
 /// 动画时间长度
-#define kAnimationsTime 0.3
+static NSTimeInterval const kAnimationsTime = 0.3;
 
 #pragma mark - 宽高限制
 
 /// 分割线高度
-#define kSeparatorlineHeight 0.5
+static CGFloat const kSeparatorLineHeight = 0.5;
 
 /// IQKeyboard与输入控件间距
-#define IQKeyboardDistanceFromTextField 10.0
+static CGFloat const kIQKeyboardDistanceFromTextField = 10.0;
 
 #pragma mark - 字数输入限制
 
-/// 用户名：4-20 字母数字下划线构成 可以是邮箱
-#define kMax_Account             20
+/// 用户名：4-20位
+static NSInteger const kAccountMinLength = 4;
+static NSInteger const kAccountMaxLength = 20;
 
-/// 密码：6-20位，最大位数
-#define kMax_Password            20
-
-/// 密码：6-20位，最小位数
-#define kMin_Password            6
+/// 密码：6-20位
+static NSInteger const kPasswordMinLength = 6;
+static NSInteger const kPasswordMaxLength = 20;
 
 /// 交易密码: 6-16位
-#define kMax_PayPassword         16
+static NSInteger const kPayPasswordMin = 6;
+static NSInteger const kPayPasswordMax = 16;
 
 /// 昵称：最多20位字符
-#define kMax_NickName            10
+static NSInteger const kNickNameMaxLength = 20;
 
 /// 验证码：6位
-#define kMax_MessageValidateCode 6
+static NSInteger const kValidateCodeMaxLength = 6;
 
 /// 个性签名
-#define kMax_Signature           100
+static NSInteger const kSignatureMaxLength = 100;
 
 /// 地址
-#define kMax_Address             100
+static NSInteger const kAddressMaxLength = 100;
 
 /// 手机号
-#define kMax_Phone               11
+static NSInteger const kPhoneMaxLength = 11;
 
 /// 电话号
-#define kMax_Tel                 18
+static NSInteger const kTelephoneMaxLength = 18;
 
 /// 身份证号
-#define kMax_IDCardNum           18
+static NSInteger const kIDCardNumberLength = 18;
 /// 真实姓名
-#define kMax_RealName            20
+static NSInteger const kRealNameLength = 20;
 /// 金额位数限制
-#define kMax_Money               12
+static NSInteger const kMoneyLength = 12;
 /// 银行卡号，12位号码
-#define kMin_BankCardNumber      12
+static NSInteger const kBankCardNumberMinLength = 12;
 /// 银行卡号，19位号码
-#define kMax_BankCardNumber      19
+static NSInteger const kBankCardNumberMaxLength = 19;
 
 #pragma mark - 字符输入限制
 
 /// 字符输入限制
-#define kNUMBERS     @"0123456789"
-#define kxX          @"xX"
-#define kAlphaNum    @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-
-#define kSpecial_Character  @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'"
-
-#define kSpecialCharacterAndNumber @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'0123456789"
-
-#define kAllCharacterAndNumber @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+static NSString *const kNUMBERS = @"0123456789";
+static NSString *const kxX = @"xX";
+static NSString *const kAlphaNum = @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+static NSString *const kSpecial_Character = @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'";
+static NSString *const kSpecialCharacterAndNumber = @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'0123456789";
+static NSString *const kAllCharacterAndNumber = @"[-/:\\;()$&@.,?!'\"{}#%^*+=_|~<>£¥€•]-：；（）¥@“”。，、？！.【】｛｝#%^*+=_—|～《》$&•…,^_^?!'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 /// 验证码，或其他数字输入（数字）
-#define kRegexNumber          @"[0-9]"
+static NSString *const kRegexNumber = @"[0-9]";
 
 /// 验证码，或其他数字输入（数字/大小写字母）
-#define kRegexNumberLetter    @"[A-Za-z0-9]"
+static NSString *const kRegexNumberLetter = @"[A-Za-z0-9]";
 
 /// 验证码，或其他数字输入（大小写字母）
-#define kRegexLetter          @"[A-Za-z]"
+static NSString *const kRegexLetter = @"[A-Za-z]";
 
 /// 验证码，或其他数字输入（大写字母）
-#define kRegexUppercaseLetter @"[A-Z]"
+static NSString *const kRegexUppercaseLetter = @"[A-Z]";
 
 /// 验证码，或其他数字输入（小定字母）
-#define kRegexLowercaseLetter @"[a-z]"
+static NSString *const kRegexLowercaseLetter = @"[a-z]";
 
 /// 验证码，或其他数字输入（中文）
-#define kRegexCN              @"[0x4e00-0x9fff]"
+static NSString *const kRegexCN = @"[0x4e00-0x9fff]";
 
 /// 验证码，或其他数字输入（数字/大小写字母/中文）
-#define kRegexNumberLetterCN  @"[A-Za-z0-9\u4e00-\u9fa5]" // \u4e00-\u9fa5 \0x4e00-\0x9fff
+static NSString *const kRegexNumberLetterCN = @"[A-Za-z0-9\u4e00-\u9fa5]"; // \u4e00-\u9fa5 \0x4e00-\0x9fff
 
 //@"^[0-9a-zA-Z]{4,12}$"
 

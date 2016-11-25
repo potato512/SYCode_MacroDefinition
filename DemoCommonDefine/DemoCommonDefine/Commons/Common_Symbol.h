@@ -12,37 +12,39 @@
 /********************** 符号 ****************************/
 
 /// 分隔或拼接符号，逗号
-#define kSymbolMarkComma              @","
+static NSString *const kSymbolMarkComma              = @",";
 
 /// 分隔或拼接符号，竖线
-#define kSymbolMarkline               @"|"
+static NSString *const kSymbolMarkline               = @"|";
 
 /// 分隔或拼接符号，空格
-#define kSymbolMarkSpace              @" "
+static NSString *const kSymbolMarkSpace              = @" ";
 
 /// 分隔或拼接符号，加号
-#define kSymbolMarkAdd                @"+"
+static NSString *const kSymbolMarkAdd                = @"+";
 
 /// 分隔或拼接符号，中括号左
-#define kSymbolMarkBracketSquareleft  @"["
+static NSString *const kSymbolMarkBracketSquareleft  = @"[";
 
 /// 分隔或拼接符号，中括号右
-#define kSymbolMarkBracketSquareRight @"]"
+static NSString *const kSymbolMarkBracketSquareRight = @"]";
 
 /// 分隔或拼接符号，小括号左
-#define kSymbolMarkBracketRoundleft   @"("
+static NSString *const kSymbolMarkBracketRoundleft   = @"(";
 
 /// 分隔或拼接符号，小括号右
-#define kSymbolMarkBracketRoundRight  @")"
+static NSString *const kSymbolMarkBracketRoundRight  = @")";
 
 /// 分隔或拼接符号，分号
-#define kSymbolMarkSemicolon          @";"
+static NSString *const kSymbolMarkSemicolon          = @";";
 
 /// 分隔或拼接符号，上箭头号
-#define kSymbolMarkUparrow            @"^"
+static NSString *const kSymbolMarkUparrow            = @"^";
 
 /// 人民币标识符号
-#define kSymbolMoneyCN @"￥"
+static NSString *const kSymbolMoneyCN                = @"￥";
+/// 美元标识符号
+static NSString *const kSymbolMoneyUS                = @"$";
 
 /********************** 符号 ****************************/
 

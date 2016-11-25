@@ -69,16 +69,16 @@
 #define kBodyHeight         ([UIScreen mainScreen].applicationFrame.size.height - 44.0)
 
 /// tabbar切换视图控制器高度
-#define kTabbarHeight       49
+static CGFloat const kTabbarHeight       = 49.0;
 
 /// 搜索视图高度
-#define kSearchBarHeight    45
+static CGFloat const kSearchBarHeight    = 45.0;
 
 /// 状态栏高度
-#define kStatusBarHeight    20
+static CGFloat const kStatusBarHeight    = 20.0;
 
 /// 导航栏高度
-#define kNavigationHeight   44
+static CGFloat const kNavigationHeight   = 44.0;
 
 #pragma mark - 设备类型
 
